@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.welcome {
+  /* height: 85vh; */
+  height: 100vh;
+  background-color: #5000F5;
+}
