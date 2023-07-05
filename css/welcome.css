@@ -1,7 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+strong {
+  color: #FFFFFF;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #36C6CF, #DD71F0);
+}
+
 .welcome {
   /* height: 85vh; */
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #5000F5;
+}
+
+.containerText {
+  width: 650px;
+  display: flex;
+  margin-right: 150px;
+  flex-direction: column;
+}
+
+.welcomeText {
+  font-size: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: 'Dela Gothic One';
+
+}
+
+.logotipo {
+  height: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
