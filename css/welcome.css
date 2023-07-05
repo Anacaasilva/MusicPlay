@@ -8,8 +8,12 @@ strong {
   background-image: linear-gradient(to right, #36C6CF, #DD71F0);
 }
 
+body {
+  background-image: linear-gradient(to bottom, #5000f5, 80% #4904d9, #4207be, #3a08a4, #33098a);;
+}
+
 .welcome {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,4 +40,8 @@ strong {
   height: 100px;
   margin-right: 100px;
   margin-top: 50px;
+}
+
+.imgWelcome {
+  margin-top: 100px;
 }
