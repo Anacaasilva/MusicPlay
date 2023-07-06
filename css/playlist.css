@@ -23,6 +23,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 1300px;
+  margin-bottom: 200px;
 }
 
 .containerPlay {
