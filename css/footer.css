@@ -44,3 +44,7 @@
 .textFooter:hover {
   color: rgba(14, 16, 19, .7);
 }
+
+.info {
+  color: white;
+}

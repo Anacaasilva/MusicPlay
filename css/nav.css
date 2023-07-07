@@ -37,12 +37,52 @@ a {
 .containerNav {
   display: flex;
   padding: 0 50px;
-  align-items: center;
+  flex-direction: column;
 
 }
 
 .buttomNav {
   font-family: 'Dela Gothic One';
+}
+
+.buttomBar {
+  height: 3px;
+  width: 100%;
+  border-radius: 99px;
+  background-color:#39c4d0; 
+}
+
+#buttomWel {
+  width: 0;
+  opacity: 0;
+}
+
+#buttomWel.buttomBar {
+  opacity: 1;
+  width: 100%;
+  transition: all 1s;
+}
+
+#buttomReco {
+  width: 0;
+  opacity: 0;
+}
+
+#buttomReco.buttomBar {
+  opacity: 1;
+  width: 100%;
+  transition: all 1s;
+}
+
+#buttomPlay {
+  width: 0;
+  opacity: 0;
+}
+
+#buttomPlay.buttomBar {
+  opacity: 1;
+  width: 100%;
+  transition: all 1s;
 }
 
 .containerIcon {
