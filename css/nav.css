@@ -93,8 +93,12 @@ a {
 
 .iconSpoti {
   margin-right: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .iconHeart {
   margin-right: 40px;
+  width: 28px;
+  height: 28px;
 }

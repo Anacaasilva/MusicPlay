@@ -59,3 +59,13 @@ body::-webkit-scrollbar-thumb {
 .imgWelcome {
   margin-top: 100px;
 }
+
+@media (max-width: 1320px) {
+  .containerText {
+    margin-left: 150px;
+  }
+
+  .welcomeText {
+    width: 500px;
+  }
+}
