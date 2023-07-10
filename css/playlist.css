@@ -20,7 +20,6 @@
 
 .mainPlay{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 1300px;
   margin-bottom: 200px;
@@ -61,5 +60,34 @@
 
   .descPlay {
     margin: 25px 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .titlePlay {
+    font-size: 31px;
+  }
+
+  .mainPlay {
+    width: 980px;
+  }
+
+  .containerPlay {
+    width: 370px;
+  }
+
+  .descPlay{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .playlist {
+    height: 180vh;
+  }
+
+  .mainPlay {
+    flex-direction: column;
+    align-items: center;
   }
 }

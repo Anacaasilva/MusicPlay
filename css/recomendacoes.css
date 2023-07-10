@@ -20,14 +20,12 @@
 }
 
 .textsReco {
-  width: 445px;
   height: 85px;
 }
 
 .titleReco {
   font-family: 'Dela Gothic One';
   color: #FFFFFF;
-  width: 445px;
   height: 46px;
   font-size: 35px;
   text-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);
@@ -38,6 +36,10 @@
   font-size: 24px;
   font-family: 'Dela Gothic One';
   margin-left: 100px;
+}
+
+.containerMusic {
+  width: 100%;
 }
 
 .musicTop {
@@ -66,5 +68,52 @@
     height: 250px;
     width: 300px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .containerReco {
+    width: 900px;
+  }
+
+  .containerReco iframe {
+    width: 250px;
+  }
+
+  .textsReco {
+    margin-top: 20px;
+  }
+
+  .titleReco {
+    font-size: 30px;
+  }
+
+  .descriptionReco {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerReco {
+    width: 700px;
+    height: 920px;
+  }
+
+  .containerReco iframe {
+    width: 300px;
+    height: 250px;
+  }
+
+  .containerMusic {
+    display: flex;
+  }
+
+  .musicTop {
+    flex-direction: column;
+  }
+
+  .musicBotton {
+    flex-direction: column;
+    margin-top: 50px;
   }
 }

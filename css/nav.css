@@ -102,3 +102,9 @@ a {
   width: 28px;
   height: 28px;
 }
+
+@media (max-width: 1000px) {
+  .containerIcon {
+    display: none;
+  }
+}
