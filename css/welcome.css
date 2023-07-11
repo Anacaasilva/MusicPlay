@@ -21,8 +21,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
   border-radius: 20px;      
+  background-color: #FFFFFF;
   border: 2px solid transparent;  
 }
 
@@ -37,8 +37,8 @@ body::-webkit-scrollbar-thumb {
 .containerText {
   width: 700px;
   display: flex;
-  margin-right: 150px;
   margin-top: 150px;
+  margin-right: 150px;
   flex-direction: column;
 }
 
@@ -51,8 +51,8 @@ body::-webkit-scrollbar-thumb {
 
 .logotipo {
   height: 100px;
-  margin-right: 100px;
   margin-top: 50px;
+  margin-right: 100px;
 }
 
 .imgWelcome {
@@ -61,15 +61,15 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1470px) {
   .containerText {
-    margin-left: 150px;
     margin-right: 0px;
+    margin-left: 150px;
   }
 }
 
 @media (max-width: 1320px) {
   .containerText {
-    margin-left: 150px;
     margin-right: 0px;
+    margin-left: 150px;
   }
 }
 
@@ -89,14 +89,15 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1000px) {
   .welcome {
-    flex-direction: column-reverse;
-    align-items: center;
     height: 130vh;
+    align-items: center;
+    flex-direction: column;
   }
 
   .containerText {
     margin-left: 0;
-    margin-top: 100px;
+    margin-top: 80px;
+    width: auto;
   }
 
   .welcomeText {
@@ -109,5 +110,15 @@ body::-webkit-scrollbar-thumb {
 
   .imgWelcome {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .containerText {
+    margin-top: 0px;
+  }
+
+  .imgWelcome {
+    margin-top: 40px;
   }
 }

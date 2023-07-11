@@ -3,48 +3,52 @@
 .playlist {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .titlePlay {
-  margin-top: 100px;
   width: 282px;
   height: 46px;
-  font-family: 'Dela Gothic One';
   font-size: 36px;
   color: #FFFFFF;
+  font-family: 'Dela Gothic One';
   text-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mainPlay{
   display: flex;
-  justify-content: space-between;
   width: 1300px;
   margin-bottom: 200px;
+  justify-content: space-between;
 }
 
 .containerPlay {
-  margin-top: 60px;
   width: 520px;
-  height: 683px;
-  background-color:rgba(53, 51, 51, 0.40); 
-  border-radius: 35px;
-  padding: 20px 50px;
   display: flex;
-  flex-direction: column;
+  height: 683px;
+  margin-top: 60px;
+  padding: 20px 50px;
+  border-radius: 35px;
   align-items: center;
+  flex-direction: column;
+  background-color:rgba(53, 51, 51, 0.40); 
 }
 
 .descPlay {
-  color: #FFFFFF;
-  font-family: 'Dela Gothic One';
   font-size: 32px;
+  color: #FFFFFF;
   margin-bottom: 25px;
+  font-family: 'Dela Gothic One';
 }
 
 @media (max-width: 1320px) {
+  .playlist {
+    height: auto;
+    margin-top: 40px;
+  }
+
   .mainPlay {
     width: 1130px;
   }
@@ -86,12 +90,39 @@
     height: 180vh;
   }
 
-  .titlePlay {
-    margin-top: 150px;
+  .mainPlay {
+    width: 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .playlist {
+    margin-top: 80px;
   }
 
-  .mainPlay {
-    flex-direction: column;
-    align-items: center;
+  .titlePlay {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .titlePlay {
+    font-size: 20px;
+  }
+
+  .containerPlay {
+    width: 370px;
+  }
+
+  .containerPlay iframe {
+    height: 570px;
+  }
+
+  .descPlay {
+    font-size: 17px;
+    margin-bottom: 0px;
   }
 }
