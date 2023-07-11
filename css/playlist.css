@@ -65,7 +65,7 @@
 
 @media (max-width: 1150px) {
   .titlePlay {
-    font-size: 31px;
+    font-size: 30px;
   }
 
   .mainPlay {
@@ -77,13 +77,17 @@
   }
 
   .descPlay{
-    font-size: 26px;
+    font-size: 23px;
   }
 }
 
 @media (max-width: 1000px) {
   .playlist {
     height: 180vh;
+  }
+
+  .titlePlay {
+    margin-top: 150px;
   }
 
   .mainPlay {
