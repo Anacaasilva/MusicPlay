@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 .playlist {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,13 +10,14 @@
 .titlePlay {
   width: 282px;
   height: 46px;
+  margin: 40px 0;
   font-size: 36px;
   color: #FFFFFF;
   font-family: 'Dela Gothic One';
   text-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.mainPlay{
+.mainPlay {
   display: flex;
   width: 1300px;
   margin-bottom: 200px;
@@ -27,13 +27,11 @@
 .containerPlay {
   width: 520px;
   display: flex;
-  height: 683px;
-  margin-top: 60px;
   padding: 20px 50px;
   border-radius: 35px;
   align-items: center;
   flex-direction: column;
-  background-color:rgba(53, 51, 51, 0.40); 
+  background-color: rgba(53, 51, 51, 0.40);
 }
 
 .descPlay {
@@ -80,7 +78,7 @@
     width: 370px;
   }
 
-  .descPlay{
+  .descPlay {
     font-size: 23px;
   }
 }
@@ -124,5 +122,35 @@
   .descPlay {
     font-size: 17px;
     margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  .playlist {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .titlePlay{
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .mainPlay {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .containerPlay iframe {
+    height: 60vh;
+  }
+
+  .containerPlay {
+    padding: 0;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
   }
 }

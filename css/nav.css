@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+.relative {
+  display: relative !important; 
+}
+
 .containerImg {
   width: 200px;
   display: flex;
@@ -38,7 +42,6 @@ a {
   display: flex;
   padding: 0 50px;
   flex-direction: column;
-
 }
 
 .buttomNav {

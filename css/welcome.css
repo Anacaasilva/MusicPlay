@@ -122,3 +122,27 @@ body::-webkit-scrollbar-thumb {
     margin-top: 40px;
   }
 }
+
+@media (max-width: 414px) {
+  .welcome {
+    height: auto;
+    margin: 110px 0;
+  }
+
+  .containerText {
+    padding: 10px;
+  }
+
+  .welcomeText {
+    font-size: 18px;
+  }
+
+  .logotipo {
+    height: 60px;
+  }
+
+  .imgWelcome {
+    height: 250px;
+  }
+}
+

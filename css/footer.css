@@ -85,6 +85,13 @@
 
   .containerFooter {
     margin-top: 60px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerDesc {
+    display: flex;
+    flex-direction: column;
+
   }
 }

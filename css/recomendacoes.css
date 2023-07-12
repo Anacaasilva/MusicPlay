@@ -10,13 +10,12 @@
 
 .containerReco {
   padding: 50px;
-  height: 690px;
   width: 1210px;
   display: flex;
   align-items: center;
   border-radius: 35px;
   flex-direction: column;
-  background-color:rgba(53, 51, 51, 0.40); 
+  background-color: rgba(53, 51, 51, 0.40);
 }
 
 .textsReco {
@@ -157,6 +156,32 @@
   }
 }
 
-/* @media (max-width: 420px) {
+@media (max-width: 414px) {
 
-} */
+  .recomendacoes {
+    height: auto;
+    padding-bottom: 0px;
+  }
+
+  .textsReco {
+    margin-top: 50px;
+  }
+
+  .titleReco {
+    font-size: 18px
+  }
+
+  .containerReco {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .containerMusic {
+    width: 100%;
+  }
+
+  .containerReco iframe {
+    width: 330px;
+  }
+}
