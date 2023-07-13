@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+:root {
+  --primary-source: 'Dela Gothic One';
+  --secondary-source: 'Delius';
+
+  --primary-color: #FFFFFF;
+  --secondary-color: #39c4d0;
+  --background-color: #5000F5;
+  --transparent-black: rgba(14, 16, 19, .7);
+}
+
 strong {
-  color: #FFFFFF;
   background-clip: text;
+  color: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #36C6CF, #DD71F0);
@@ -17,13 +27,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(14, 16, 19, .7);
+  background-color: var(--transparent-black);
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;      
-  background-color: #FFFFFF;
   border: 2px solid transparent;  
+  background-color: var(--primary-color);
 }
 
 .welcome {
@@ -31,7 +41,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5000F5;
+  background-color: var(--background-color);
 }
 
 .containerText {
@@ -44,9 +54,9 @@ body::-webkit-scrollbar-thumb {
 
 .welcomeText {
   font-size: 40px;
-  color: #FFFFFF;
   line-height: 60px;
-  font-family: 'Dela Gothic One';
+  color: var(--primary-color);
+  font-family: var(--primary-source);
 }
 
 .logotipo {
@@ -60,6 +70,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1470px) {
+
   .containerText {
     margin-right: 0px;
     margin-left: 150px;
@@ -67,6 +78,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1320px) {
+
   .containerText {
     margin-right: 0px;
     margin-left: 150px;
@@ -74,6 +86,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1235px) {
+
   .containerText {
   margin-right: 0px;
   }
@@ -88,6 +101,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1000px) {
+
   .welcome {
     height: 130vh;
     align-items: center;
@@ -95,6 +109,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .containerText {
+
     margin-left: 0;
     margin-top: 80px;
     width: auto;
@@ -114,6 +129,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 450px) {
+
   .containerText {
     margin-top: 0px;
   }
@@ -124,6 +140,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 414px) {
+  
   .welcome {
     height: auto;
     margin: 110px 0;

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+:root {
+  --primary-source: 'Dela Gothic One';
+  --secondary-source: 'Delius';
+
+  --primary-color: #FFFFFF;
+  --secondary-color: #39c4d0;
+  --background-color: #5000F5;
+  --transparent-black: rgba(14, 16, 19, .7);
+}
+
 .recomendacoes {
   height: 100vh;
   display: flex;
@@ -10,8 +20,8 @@
 
 .containerReco {
   padding: 50px;
-  width: 1210px;
   display: flex;
+  width: 1210px;
   align-items: center;
   border-radius: 35px;
   flex-direction: column;
@@ -25,16 +35,16 @@
 .titleReco {
   height: 46px;
   font-size: 35px;
-  color: #FFFFFF;
-  font-family: 'Dela Gothic One';
+  color: var(--primary-color);
+  font-family: var(--primary-source);
   text-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .descriptionReco {
   font-size: 24px;
-  color: #FFFFFF;
   margin-left: 100px;
-  font-family: 'Dela Gothic One';
+  color: var(--primary-color);
+  font-family: var(--primary-source);
 }
 
 .containerMusic {
@@ -57,6 +67,7 @@
 }
 
 @media (max-width: 1320px) {
+
   .containerReco {
     width: 1050px;
     padding: 40px;
@@ -70,6 +81,7 @@
 }
 
 @media (max-width: 1150px) {
+
   .containerReco {
     width: 900px;
   }
@@ -92,6 +104,7 @@
 }
 
 @media (max-width: 1000px) {
+
   .containerReco {
     width: 700px;
     height: 920px;
@@ -117,19 +130,20 @@
 }
 
 @media (max-width: 800px) {
+
   .containerReco {
     width: 370px;
   }
 
   .containerMusic {
-    flex-direction: column;
     height: 100%;
+    flex-direction: column;
   }
 
   .containerReco iframe {
+    padding: 0;
     width: 100%;
     height: 130px;
-    padding: 0;
   }
 
   .musicBotton {
@@ -138,11 +152,12 @@
 }
 
 @media (max-width: 540px) {
+
   .textsReco {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 0;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -151,8 +166,8 @@
   }
 
   .descriptionReco {
-    font-size: 10px;
     margin-left: 0;
+    font-size: 10px;
   }
 }
 

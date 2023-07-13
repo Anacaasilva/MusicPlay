@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+:root {
+  --primary-source: 'Dela Gothic One';
+  --secondary-source: 'Delius';
+
+  --primary-color: #FFFFFF;
+  --secondary-color: #39c4d0;
+  --background-color: #5000F5;
+  --transparent-black: rgba(14, 16, 19, .7);
+}
+
 body {
-  background-color: #5000F5;
+  background-color: var(--background-color);
 }
 
 nav {
@@ -12,16 +22,12 @@ nav {
   position: fixed;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(14, 16, 19, .7);
+  background-color: var(--transparent-black);
 }
 
 a {
-  color: #FFFFFF;
   text-decoration: none;
-}
-
-.relative {
-  display: relative !important; 
+  color: var(--primary-color);
 }
 
 .containerImg {
@@ -45,14 +51,14 @@ a {
 }
 
 .buttomNav {
-  font-family: 'Dela Gothic One';
+  font-family: var(--primary-source);
 }
 
 .buttomBar {
   height: 3px;
   width: 100%;
   border-radius: 99px;
-  background-color:#39c4d0; 
+  background-color: var(--secondary-color); 
 }
 
 #buttomWel {
@@ -107,6 +113,7 @@ a {
 }
 
 @media (max-width: 1000px) {
+
   nav {
     justify-content: flex-start;
   }
@@ -117,6 +124,7 @@ a {
 }
 
 @media (max-width: 800px) {
+
   nav {
     justify-content: center;
   }
@@ -127,6 +135,7 @@ a {
 }
 
 @media (max-width: 540px) {
+  
   .containerNav {
     padding: 0 20px;
   }
